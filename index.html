@@ -1,97 +1,641 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tablas del Asador Mendoza</title>
-<link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas del Asador Mendoza</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<!-- PORTADA PRINCIPAL -->
-    <header class="portada">
-        <div class="contenido-portada">
-            
-            <img src="logo.png" alt="Logo Tablas del Asador Mendoza" class="logo-empresa">
-            
-            <h1>🔥 Tablas del Asador Mendoza</h1>
-            <p class="subtitulo">Tablas personalizadas hechas a mano.</p>
-            
-            <!-- ACÁ COLOCÁS EL NUEVO ENLACE CON TU NÚMERO Y MENSAJE -->
-            <a href="https://api.whatsapp.com/send?phone=5492615094424&text=Hola!%20Quiero%20consultar%20por%20una%20tabla%20personalizada" class="btn-whatsapp" target="_blank">
-                📱 Pedidos por WhatsApp
-            </a>
-            
-        </div>
-    </header>
-<!-- SECCIÓN CATÁLOGO -->
-    <main class="catalogo">
-        <h2>Nuestras Tablas</h2>
-        
-  <div class="contenedor-productos">
-            
-            <!-- 1. Tabla Redonda Chica -->
-            <div class="tarjeta-producto">
-                <img src="redonda-chica.jpg" alt="Tabla Redonda Chica" class="img-producto">
-                <div class="info-producto">
-                    <h3>Tabla Redonda - Chica</h3>
-                    <p>Ideal para picadas individuales, presentaciones o cortes pequeños. Grabado personalizado incluido.</p>
-                    <span class="precio">$ Consultar</span>
-                </div>
-            </div>
 
-            <!-- 2. Tabla Redonda Grande -->
-            <div class="tarjeta-producto">
-                <img src="redonda-grande.jpg" alt="Tabla Redonda Grande" class="img-producto">
-                <div class="info-producto">
-                    <h3>Tabla Redonda - Grande</h3>
-                    <p>Perfecta para pizzas, asados familiares o juntadas. Gran superficie para lucirte en la mesa.</p>
-                    <span class="precio">$ Consultar</span>
-                </div>
-            </div>
+<nav class="navbar">
 
-            <!-- 3. Tabla Cuadrada Chica -->
-            <div class="tarjeta-producto">
-                <img src="cuadrada-chica.jpg" alt="Tabla Cuadrada Chica" class="img-producto">
-                <div class="info-producto">
-                    <h3>Tabla Cuadrada - Chica</h3>
-                    <p>Diseño compacto y cómodo. Ideal para el día a día en la cocina o copetines personalizados.</p>
-                    <span class="precio">$ Consultar</span>
-                </div>
-            </div>
+<div class="logo-nav">
+🪵 Tablas del Asador
+</div>
 
-            <!-- 4. Tabla Cuadrada Grande -->
-            <div class="tarjeta-producto">
-                <img src="cuadrada-grande.jpg" alt="Tabla Cuadrada Grande" class="img-producto">
-                <div class="info-producto">
-                    <h3>Tabla Cuadrada - Grande</h3>
-                    <p>La compañera infaltable del asador. Espaciosa, robusta, con canaleta para jugos y grabado a mano.</p>
-                    <span class="precio">$ Consultar</span>
-                </div>
-            </div>
+<ul>
 
-        </div>
-                </div>
-            </div>
+<li><a href="#inicio">Inicio</a></li>
 
-        </div>
-    </main>
-    <section class="testimonios">
-        <h2>Lo que dicen nuestros clientes</h2>
-        <div class="contenedor-testimonios">
-            <div class="tarjeta-testimonio">
-                <p class="comentario">"La tabla grabada que encargué para el Día del Padre superó las expectativas. Una calidad tremenda la madera."</p>
-                <p class="cliente">⭐ Carlos M. - Mendoza</p>
-            </div>
-        </div>
-    </section>
+<li><a href="#catalogo">Catálogo</a></li>
 
-    <section class="redes">
-        <h2>Seguinos en Instagram</h2>
-        <p>Mirá nuestros trabajos diarios y nuevos diseños.</p>
-        <a href="https://instagram.com/tu_usuario" class="btn-instagram" target="_blank">
-            📸 @TablasDelAsadorMendoza10
-        </a>
-    </section>
+<li><a href="#opiniones">Opiniones</a></li>
+
+<li><a href="#instagram">Instagram</a></li>
+
+</ul>
+
+</nav>
+
+<header class="portada" id="inicio">
+
+<div class="contenido-portada">
+
+<img src="logo.png" class="logo-empresa">
+
+<h1>Tablas del Asador Mendoza</h1>
+
+<p class="subtitulo">
+
+Convertimos un pedazo de madera en un regalo único.
+
+Cada tabla está hecha artesanalmente y personalizada especialmente para vos.
+
+</p>
+
+<a href="https://api.whatsapp.com/send?phone=5492615094424&text=Hola,%20quiero%20hacer%20un%20pedido." class="btn-whatsapp">
+
+📲 Pedir por WhatsApp
+
+</a>
+
+</div>
+
+</header>
+
+<section class="beneficios">
+
+<h2>¿Por qué elegirnos?</h2>
+
+<div class="beneficios-grid">
+
+<div class="beneficio">
+
+🔥
+
+<h3>Grabado Personalizado</h3>
+
+<p>Diseños únicos hechos para cada cliente.</p>
+
+</div>
+
+<div class="beneficio">
+
+🪵
+
+<h3>Madera Premium</h3>
+
+<p>Tablas resistentes y de excelente calidad.</p>
+
+</div>
+
+<div class="beneficio">
+
+🎁
+
+<h3>Regalo Perfecto</h3>
+
+<p>Ideal para cumpleaños, aniversarios y eventos.</p>
+
+</div>
+
+<div class="beneficio">
+
+🚚
+
+<h3>Envíos</h3>
+
+<p>Consultá disponibilidad de envío.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="catalogo" id="catalogo">
+
+<h2>Elegí tu próxima tabla</h2>
+
+<div class="contenedor-productos">
+
+<div class="tarjeta-producto destaque">
+
+<span class="etiqueta">
+
+⭐ MÁS VENDIDA
+
+</span>
+
+<img src="cuadrada-grande.jpg" class="img-producto">
+
+<div class="info-producto">
+
+<h3>Tabla Grande 50x30</h3>
+
+<p>
+
+✔ Canaleta para jugos
+
+<br>
+
+✔ Grabado personalizado
+
+<br>
+
+✔ Ideal para asados
+
+</p>
+
+<p class="precio">$15.000</p>
+
+<a class="btn-comprar"
+
+href="https://api.whatsapp.com/send?phone=5492615094424&text=Hola,%20quiero%20la%20Tabla%20Grande%2050x30">
+
+Comprar por WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+<div class="tarjeta-producto">
+
+<img src="cuadrada-chica.jpg" class="img-producto">
+
+<div class="info-producto">
+
+<h3>Tabla Chica 30x20</h3>
+
+<p>
+
+✔ Compacta
+
+<br>
+
+✔ Grabado incluido
+
+</p>
+
+<p class="precio">$8.000</p>
+
+<a class="btn-comprar"
+
+href="https://api.whatsapp.com/send?phone=5492615094424&text=Hola,%20quiero%20la%20Tabla%20Chica%2030x20">
+
+Comprar por WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+<div class="tarjeta-producto">
+
+<img src="redonda-chica.jpg" class="img-producto">
+
+<div class="info-producto">
+
+<h3>Tabla Redonda Chica</h3>
+
+<p>
+
+✔ Ideal para picadas
+
+<br>
+
+✔ Grabado personalizado
+
+</p>
+
+<p class="precio">$10.000</p>
+
+<a class="btn-comprar"
+
+href="https://api.whatsapp.com/send?phone=5492615094424&text=Hola,%20quiero%20la%20Tabla%20Redonda%20Chica">
+
+Comprar por WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+<div class="tarjeta-producto">
+
+<img src="redonda-grande.jpg" class="img-producto">
+
+<div class="info-producto">
+
+<h3>Tabla Pizzera</h3>
+
+<p>
+
+✔ Ideal para pizzas
+
+<br>
+
+✔ Gran tamaño
+
+</p>
+
+<p class="precio">$18.000</p>
+
+<a class="btn-comprar"
+
+href="https://api.whatsapp.com/send?phone=5492615094424&text=Hola,%20quiero%20la%20Tabla%20Pizzera">
+
+Comprar por WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="testimonios" id="opiniones">
+
+<h2>Lo que opinan nuestros clientes</h2>
+
+<div class="tarjeta-testimonio">
+
+<p>
+
+"La calidad es excelente y el grabado quedó mejor de lo que imaginaba. ¡Súper recomendable!"
+
+</p>
+
+<strong>⭐⭐⭐⭐⭐ Carlos - Mendoza</strong>
+
+</div>
+
+</section>
+
+<section class="instagram" id="instagram">
+
+<h2>Seguinos en Instagram</h2>
+
+<p>
+
+Descubrí nuevos diseños y trabajos todos los días.
+
+</p>
+
+<a
+
+href="https://instagram.com/tablasdelasadormendoza10"
+
+class="btn-instagram">
+
+📸 @TablasDelAsadorMendoza10
+
+</a>
+
+</section>
+
+<a
+
+class="whatsapp-fijo"
+
+href="https://api.whatsapp.com/send?phone=5492615094424&text=Hola,%20quiero%20hacer%20un%20pedido.">
+
+💬
+
+</a>
+
+<footer>
+
+<p>
+
+© 2026 Tablas del Asador Mendoza
+
+</p>
+
+</footer>
+
 </body>
+
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas del Asador Mendoza</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo-nav">
+🪵 Tablas del Asador
+</div>
+
+<ul>
+
+<li><a href="#inicio">Inicio</a></li>
+
+<li><a href="#catalogo">Catálogo</a></li>
+
+<li><a href="#opiniones">Opiniones</a></li>
+
+<li><a href="#instagram">Instagram</a></li>
+
+</ul>
+
+</nav>
+
+<header class="portada" id="inicio">
+
+<div class="contenido-portada">
+
+<img src="logo.png" class="logo-empresa">
+
+<h1>Tablas del Asador Mendoza</h1>
+
+<p class="subtitulo">
+
+Convertimos un pedazo de madera en un regalo único.
+
+Cada tabla está hecha artesanalmente y personalizada especialmente para vos.
+
+</p>
+
+<a href="https://api.whatsapp.com/send?phone=5492615094424&text=Hola,%20quiero%20hacer%20un%20pedido." class="btn-whatsapp">
+
+📲 Pedir por WhatsApp
+
+</a>
+
+</div>
+
+</header>
+
+<section class="beneficios">
+
+<h2>¿Por qué elegirnos?</h2>
+
+<div class="beneficios-grid">
+
+<div class="beneficio">
+
+🔥
+
+<h3>Grabado Personalizado</h3>
+
+<p>Diseños únicos hechos para cada cliente.</p>
+
+</div>
+
+<div class="beneficio">
+
+🪵
+
+<h3>Madera Premium</h3>
+
+<p>Tablas resistentes y de excelente calidad.</p>
+
+</div>
+
+<div class="beneficio">
+
+🎁
+
+<h3>Regalo Perfecto</h3>
+
+<p>Ideal para cumpleaños, aniversarios y eventos.</p>
+
+</div>
+
+<div class="beneficio">
+
+🚚
+
+<h3>Envíos</h3>
+
+<p>Consultá disponibilidad de envío.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="catalogo" id="catalogo">
+
+<h2>Elegí tu próxima tabla</h2>
+
+<div class="contenedor-productos">
+
+<div class="tarjeta-producto destaque">
+
+<span class="etiqueta">
+
+⭐ MÁS VENDIDA
+
+</span>
+
+<img src="cuadrada-grande.jpg" class="img-producto">
+
+<div class="info-producto">
+
+<h3>Tabla Grande 50x30</h3>
+
+<p>
+
+✔ Canaleta para jugos
+
+<br>
+
+✔ Grabado personalizado
+
+<br>
+
+✔ Ideal para asados
+
+</p>
+
+<p class="precio">$15.000</p>
+
+<a class="btn-comprar"
+
+href="https://api.whatsapp.com/send?phone=5492615094424&text=Hola,%20quiero%20la%20Tabla%20Grande%2050x30">
+
+Comprar por WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+<div class="tarjeta-producto">
+
+<img src="cuadrada-chica.jpg" class="img-producto">
+
+<div class="info-producto">
+
+<h3>Tabla Chica 30x20</h3>
+
+<p>
+
+✔ Compacta
+
+<br>
+
+✔ Grabado incluido
+
+</p>
+
+<p class="precio">$8.000</p>
+
+<a class="btn-comprar"
+
+href="https://api.whatsapp.com/send?phone=5492615094424&text=Hola,%20quiero%20la%20Tabla%20Chica%2030x20">
+
+Comprar por WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+<div class="tarjeta-producto">
+
+<img src="redonda-chica.jpg" class="img-producto">
+
+<div class="info-producto">
+
+<h3>Tabla Redonda Chica</h3>
+
+<p>
+
+✔ Ideal para picadas
+
+<br>
+
+✔ Grabado personalizado
+
+</p>
+
+<p class="precio">$10.000</p>
+
+<a class="btn-comprar"
+
+href="https://api.whatsapp.com/send?phone=5492615094424&text=Hola,%20quiero%20la%20Tabla%20Redonda%20Chica">
+
+Comprar por WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+<div class="tarjeta-producto">
+
+<img src="redonda-grande.jpg" class="img-producto">
+
+<div class="info-producto">
+
+<h3>Tabla Pizzera</h3>
+
+<p>
+
+✔ Ideal para pizzas
+
+<br>
+
+✔ Gran tamaño
+
+</p>
+
+<p class="precio">$18.000</p>
+
+<a class="btn-comprar"
+
+href="https://api.whatsapp.com/send?phone=5492615094424&text=Hola,%20quiero%20la%20Tabla%20Pizzera">
+
+Comprar por WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="testimonios" id="opiniones">
+
+<h2>Lo que opinan nuestros clientes</h2>
+
+<div class="tarjeta-testimonio">
+
+<p>
+
+"La calidad es excelente y el grabado quedó mejor de lo que imaginaba. ¡Súper recomendable!"
+
+</p>
+
+<strong>⭐⭐⭐⭐⭐ Carlos - Mendoza</strong>
+
+</div>
+
+</section>
+
+<section class="instagram" id="instagram">
+
+<h2>Seguinos en Instagram</h2>
+
+<p>
+
+Descubrí nuevos diseños y trabajos todos los días.
+
+</p>
+
+<a
+
+href="https://instagram.com/tablasdelasadormendoza10"
+
+class="btn-instagram">
+
+📸 @TablasDelAsadorMendoza10
+
+</a>
+
+</section>
+
+<a
+
+class="whatsapp-fijo"
+
+href="https://api.whatsapp.com/send?phone=5492615094424&text=Hola,%20quiero%20hacer%20un%20pedido.">
+
+💬
+
+</a>
+
+<footer>
+
+<p>
+
+© 2026 Tablas del Asador Mendoza
+
+</p>
+
+</footer>
+
+</body>
+
 </html>
