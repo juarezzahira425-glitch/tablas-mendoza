@@ -1,201 +1,561 @@
-/* Estilos generales para toda la página */
-body {
-    background-color: #1a1a1a; /* Un fondo gris oscuro, casi negro, muy elegante */
-    color: #ffffff;            /* Texto blanco para que resalte bien */
-    font-family: Arial, sans-serif; /* Una letra limpia y moderna */
-    margin: 0;
-    padding: 0;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-/* Estilo para el título principal */
-h1 {
-    color: #d4a373; /* Un color tipo madera/dorado de asado */
-    text-align: center;
-    margin-top: 50px;
-}
-<body>
-body {
-    font-family: 'Montserrat', sans-serif; /* Letra limpia para los textos */
+html{
+scroll-behavior:smooth;
 }
 
-h1, h2, h3 {
-    font-family: 'Oswald', sans-serif; /* Letra imponente para los títulos */
-    text-transform: uppercase; /* Hace que los títulos queden en mayúsculas, bien estéticos */
-    letter-spacing: 1px; /* Separa un poquito las letras para que respiren */
-}
-    <!-- PORTADA PRINCIPAL -->
-    <header class="portada">
-        <div class="contenido-portada">
-            <h1>🔥ñTablas del Asador Mendoza</h1>
-            <p class="subtitulo">Tablas personalizadas hechas a mano.</p>
-            
-            <!-- Botón de WhatsApp (Falta poner tu número real después) -->
-            <a href="https://wa.me/tu_numero_aqui" class="btn-whatsapp" target="_blank">
-                📱 Pedidos por WhatsApp
-            </a>
-        </div>
-    </header>
-
-</body>
-/* Estilos para la Portada */
-.portada {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 60px 20px; /* Espacio arriba y abajo para que no quede todo apretado */
+body{
+font-family:'Montserrat',sans-serif;
+background:#121212;
+color:white;
 }
 
-.subtitulo {
-    font-size: 1.2rem;
-    color: #cccccc; /* Un gris claro elegante */
-    margin-bottom: 30px; /* Separa el texto del botón */
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+background:#1b1b1b;
+box-shadow:0 2px 10px rgba(0,0,0,.5);
+z-index:999;
 }
 
-/* Estilo real del Botón de WhatsApp */
-.btn-whatsapp {
-    display: inline-block;
-    background-color: #25d366; /* El verde original de WhatsApp */
-    color: #ffffff !important;  /* Fuerza a que la letra sea blanca */
-    text-decoration: none !important; /* Saca el subrayado azul feo */
-    padding: 15px 30px; /* Le da tamaño y cuerpo al botón */
-    font-weight: bold;   /* Hace la letra negrita */
-    font-size: 1.1rem;
-    border-radius: 30px; /* Lo hace redondeado y moderno */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Le da una sombra suave */
-}
-/* --- ESTILOS DEL CATÁLOGO --- */
-
-/* Título de la sección */
-.catalogo h2 {
-    text-align: center;
-    color: #ffffff;
-    font-size: 1.8rem;
-    margin-top: 40px;
-    margin-bottom: 20px;
+.logo-nav{
+font-family:'Oswald',sans-serif;
+font-size:1.4rem;
+color:#d4a373;
 }
 
-/* El contenedor que agrupa todas las tarjetas */
-.contenedor-productos {
-    display: flex;
-    flex-direction: column; /* Una tarjeta abajo de la otra en el celular */
-    align-items: center;
-    gap: 25px; /* Deja una separación elegante entre tarjeta y tarjeta */
-    padding: 20px;
+.navbar ul{
+display:flex;
+gap:15px;
+list-style:none;
 }
 
-/* La tarjeta individual de cada producto */
-.tarjeta-producto {
-    background-color: #262626; /* Un gris un poco más claro que el fondo para que resalte */
-    border-radius: 15px;       /* Bordes redondeados y modernos */
-    overflow: hidden;          /* Corta la foto para que se adapte al redondeado de la tarjeta */
-    max-width: 350px;          /* Evita que la tarjeta se haga gigante */
-    width: 100%;               /* Se adapta al ancho de la pantalla del celular */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para darle profundidad */
+.navbar a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+font-size:.9rem;
+transition:.3s;
 }
 
-/* Controlar las fotos de los productos */
-.img-producto {
-    width: 100%;               /* Obliga a la foto a ocupar todo el ancho de la tarjeta */
-    height: 220px;             /* Le da una altura fija fija a todas las fotos para que queden iguales */
-    object-fit: cover;         /* Recorta la imagen inteligentemente para que no se vea estirada ni aplastada */
+.navbar a:hover{
+color:#d4a373;
 }
 
-/* El bloque de texto dentro de la tarjeta */
-.info-producto {
-    padding: 20px;
+.portada{
+padding:120px 20px 70px;
+text-align:center;
+background:linear-gradient(to bottom,#1a1a1a,#111);
 }
 
-.info-producto h3 {
-    margin: 0 0 10px 0;
-    color: #d4a373;            /* Color madera para el nombre del producto */
-    font-size: 1.3rem;
+.logo-empresa{
+width:130px;
+height:130px;
+border-radius:50%;
+margin-bottom:20px;
+box-shadow:0 0 20px rgba(212,163,115,.5);
 }
 
-.info-producto p {
-    color: #cccccc;
-    font-size: 0.95rem;
-    line-height: 1.4;          /* Le da más espacio entre renglones para que se lea mejor */
-    margin-bottom: 15px;
+h1{
+font-family:'Oswald',sans-serif;
+font-size:2.4rem;
+color:#d4a373;
+margin-bottom:15px;
 }
 
-/* El precio destacable */
-.precio {
-    display: block;
-    color: #25d366;            /* Verde llamativo para el precio/consulta */
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-/* --- ESTILOS DE TESTIMONIOS --- */
-.testimonios {
-    padding: 40px 20px;
-    text-align: center;
+.subtitulo{
+max-width:600px;
+margin:auto;
+color:#ddd;
+line-height:1.7;
+font-size:1rem;
 }
 
-.testimonios h2 {
-    color: #ffffff;
-    font-size: 1.6rem;
-    margin-bottom: 20px;
+.btn-whatsapp{
+display:inline-block;
+margin-top:30px;
+background:#25D366;
+padding:15px 30px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+color:white;
+transition:.3s;
 }
 
-.tarjeta-testimonio {
-    background-color: #262626;
-    padding: 20px;
-    border-radius: 12px;
-    max-width: 350px;
-    margin: 0 auto; /* Centra la cajita en el celular */
-    border-left: 4px solid #d4a373; /* Una sutil línea color madera al costado */
+.btn-whatsapp:hover{
+transform:scale(1.05);
 }
 
-.comentario {
-    font-style: italic;
-    color: #dddddd;
-    line-height: 1.4;
-    margin-bottom: 10px;
+section{
+padding:70px 20px;
 }
 
-.cliente {
-    color: #d4a373;
-    font-weight: bold;
-    font-size: 0.9rem;
-    margin: 0;
+section h2{
+font-family:'Oswald',sans-serif;
+text-align:center;
+margin-bottom:40px;
+font-size:2rem;
+color:#d4a373;
 }
 
-/* --- ESTILOS DE REDES (INSTAGRAM) --- */
-.redes {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #111111; /* Un fondo sutilmente más oscuro para separar del resto */
+.beneficios-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+gap:20px;
 }
 
-.redes h2 {
-    color: #ffffff;
-    font-size: 1.6rem;
-    margin-bottom: 10px;
+.beneficio{
+background:#1f1f1f;
+padding:25px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
 }
 
-.redes p {
-    color: #aaaaaa;
-    margin-bottom: 20px;
+.beneficio:hover{
+transform:translateY(-8px);
 }
 
-/* Botón con degradado característico de Instagram */
-.btn-instagram {
-    display: inline-block;
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    color: #ffffff !important;
-    text-decoration: none !important;
-    padding: 12px 25px;
-    font-weight: bold;
-    border-radius: 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+.beneficio h3{
+margin:15px 0;
 }
-/* Estilo para el logo de la empresa */
-.logo-empresa {
-    width: 120px;         /* Un ancho ideal para la pantalla del celular */
-    height: 120px;        /* Alto igual para mantener la proporción */
-    object-fit: contain;  /* Hace que el logo se adapte al espacio sin deformarse */
-    border-radius: 50%;   /* Si tu logo es redondo, esto pule los bordes perfectamente */
-    margin-bottom: 15px;  /* Deja una separación prolija antes del título con el fueguito */
+
+.contenedor-productos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.tarjeta-producto{
+background:#1f1f1f;
+border-radius:18px;
+overflow:hidden;
+transition:.3s;
+box-shadow:0 10px 20px rgba(0,0,0,.4);
+position:relative;
+}
+
+.tarjeta-producto:hover{
+transform:translateY(-10px);
+}
+
+.etiqueta{
+position:absolute;
+top:15px;
+left:15px;
+background:#d4a373;
+color:black;
+padding:6px 12px;
+border-radius:30px;
+font-size:.8rem;
+font-weight:bold;
+}
+
+.img-producto{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+.info-producto{
+padding:20px;
+}
+
+.info-producto h3{
+font-family:'Oswald',sans-serif;
+margin-bottom:15px;
+color:#d4a373;
+}
+
+.info-producto p{
+line-height:1.7;
+color:#ddd;
+}
+
+.precio{
+font-size:2rem;
+font-weight:bold;
+color:#25D366;
+margin:20px 0;
+}
+
+.btn-comprar{
+display:block;
+text-align:center;
+background:#25D366;
+padding:14px;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+color:white;
+transition:.3s;
+}
+
+.btn-comprar:hover{
+background:#1fa851;
+}
+
+.tarjeta-testimonio{
+max-width:700px;
+margin:auto;
+background:#1f1f1f;
+padding:30px;
+border-radius:18px;
+text-align:center;
+line-height:1.8;
+border-left:5px solid #d4a373;
+}
+
+.instagram{
+text-align:center;
+}
+
+.btn-instagram{
+display:inline-block;
+margin-top:20px;
+padding:14px 28px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+color:white;
+background:linear-gradient(45deg,#f09433,#dc2743,#833ab4);
+}
+
+.whatsapp-fijo{
+position:fixed;
+right:20px;
+bottom:20px;
+width:60px;
+height:60px;
+border-radius:50%;
+background:#25D366;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:28px;
+text-decoration:none;
+color:white;
+box-shadow:0 5px 20px rgba(0,0,0,.4);
+z-index:999;
+transition:.3s;
+}
+
+.whatsapp-fijo:hover{
+transform:scale(1.1);
+}
+
+footer{
+background:#0d0d0d;
+padding:30px;
+text-align:center;
+color:#999;
+margin-top:50px;
+}
+
+@media(max-width:700px){
+
+.navbar{
+flex-direction:column;
+gap:10px;
+}
+
+.navbar ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+h1{
+font-size:2rem;
+}
+
+}*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:#121212;
+color:white;
+}
+
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+background:#1b1b1b;
+box-shadow:0 2px 10px rgba(0,0,0,.5);
+z-index:999;
+}
+
+.logo-nav{
+font-family:'Oswald',sans-serif;
+font-size:1.4rem;
+color:#d4a373;
+}
+
+.navbar ul{
+display:flex;
+gap:15px;
+list-style:none;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+font-size:.9rem;
+transition:.3s;
+}
+
+.navbar a:hover{
+color:#d4a373;
+}
+
+.portada{
+padding:120px 20px 70px;
+text-align:center;
+background:linear-gradient(to bottom,#1a1a1a,#111);
+}
+
+.logo-empresa{
+width:130px;
+height:130px;
+border-radius:50%;
+margin-bottom:20px;
+box-shadow:0 0 20px rgba(212,163,115,.5);
+}
+
+h1{
+font-family:'Oswald',sans-serif;
+font-size:2.4rem;
+color:#d4a373;
+margin-bottom:15px;
+}
+
+.subtitulo{
+max-width:600px;
+margin:auto;
+color:#ddd;
+line-height:1.7;
+font-size:1rem;
+}
+
+.btn-whatsapp{
+display:inline-block;
+margin-top:30px;
+background:#25D366;
+padding:15px 30px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+color:white;
+transition:.3s;
+}
+
+.btn-whatsapp:hover{
+transform:scale(1.05);
+}
+
+section{
+padding:70px 20px;
+}
+
+section h2{
+font-family:'Oswald',sans-serif;
+text-align:center;
+margin-bottom:40px;
+font-size:2rem;
+color:#d4a373;
+}
+
+.beneficios-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+gap:20px;
+}
+
+.beneficio{
+background:#1f1f1f;
+padding:25px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
+}
+
+.beneficio:hover{
+transform:translateY(-8px);
+}
+
+.beneficio h3{
+margin:15px 0;
+}
+
+.contenedor-productos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.tarjeta-producto{
+background:#1f1f1f;
+border-radius:18px;
+overflow:hidden;
+transition:.3s;
+box-shadow:0 10px 20px rgba(0,0,0,.4);
+position:relative;
+}
+
+.tarjeta-producto:hover{
+transform:translateY(-10px);
+}
+
+.etiqueta{
+position:absolute;
+top:15px;
+left:15px;
+background:#d4a373;
+color:black;
+padding:6px 12px;
+border-radius:30px;
+font-size:.8rem;
+font-weight:bold;
+}
+
+.img-producto{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+.info-producto{
+padding:20px;
+}
+
+.info-producto h3{
+font-family:'Oswald',sans-serif;
+margin-bottom:15px;
+color:#d4a373;
+}
+
+.info-producto p{
+line-height:1.7;
+color:#ddd;
+}
+
+.precio{
+font-size:2rem;
+font-weight:bold;
+color:#25D366;
+margin:20px 0;
+}
+
+.btn-comprar{
+display:block;
+text-align:center;
+background:#25D366;
+padding:14px;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+color:white;
+transition:.3s;
+}
+
+.btn-comprar:hover{
+background:#1fa851;
+}
+
+.tarjeta-testimonio{
+max-width:700px;
+margin:auto;
+background:#1f1f1f;
+padding:30px;
+border-radius:18px;
+text-align:center;
+line-height:1.8;
+border-left:5px solid #d4a373;
+}
+
+.instagram{
+text-align:center;
+}
+
+.btn-instagram{
+display:inline-block;
+margin-top:20px;
+padding:14px 28px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+color:white;
+background:linear-gradient(45deg,#f09433,#dc2743,#833ab4);
+}
+
+.whatsapp-fijo{
+position:fixed;
+right:20px;
+bottom:20px;
+width:60px;
+height:60px;
+border-radius:50%;
+background:#25D366;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:28px;
+text-decoration:none;
+color:white;
+box-shadow:0 5px 20px rgba(0,0,0,.4);
+z-index:999;
+transition:.3s;
+}
+
+.whatsapp-fijo:hover{
+transform:scale(1.1);
+}
+
+footer{
+background:#0d0d0d;
+padding:30px;
+text-align:center;
+color:#999;
+margin-top:50px;
+}
+
+@media(max-width:700px){
+
+.navbar{
+flex-direction:column;
+gap:10px;
+}
+
+.navbar ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+h1{
+font-size:2rem;
+}
+
 }
