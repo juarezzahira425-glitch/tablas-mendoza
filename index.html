@@ -4,334 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas Mendoza - Catálogo Premium</title>
+    
+    <!-- Enlace corregido para tu archivo estilo.css -->
+    <link rel="stylesheet" href="estilo.css">
+    
+    <!-- Fuentes e Iconos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    
-    <style>
-        :root {
-            --bg-color: #f5f5f7;
-            --card-bg: #ffffff;
-            --text-main: #1d1d1f;
-            --text-muted: #86868b;
-            --accent-apple: #0066cc;
-            --whatsapp-green: #25d366;
-            --whatsapp-dark: #20ba5a;
-            --border-radius: 16px;
-            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', sans-serif;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            padding-top: 60px; /* Espacio para el menú fijo */
-            padding-bottom: 80px;
-        }
-
-        /* Menú Superior Fijo */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 60px;
-            background-color: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(0,0,0,0.05);
-        }
-
-        .logo {
-            font-weight: 700;
-            font-size: 1.1rem;
-            letter-spacing: -0.5px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .logo i {
-            color: #8b5a2b;
-        }
-
-        /* Hero Banner */
-        .hero {
-            padding: 40px 20px 20px 20px;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            letter-spacing: -1px;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            color: var(--text-muted);
-            font-size: 1rem;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        /* Sección Productos */
-        .container {
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        /* Tarjetas Modernas */
-        .card {
-            background-color: var(--card-bg);
-            border-radius: var(--border-radius);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-            overflow: hidden;
-            position: relative;
-            transition: var(--transition);
-            border: 1px solid rgba(0,0,0,0.02);
-        }
-
-        /* Efecto al tocar la tarjeta */
-        .card:active {
-            transform: scale(0.98);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
-        }
-
-        .image-container {
-            width: 100%;
-            height: 280px;
-            background-color: #eaeaea;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Insignia Más Vendida */
-        .badge {
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            background-color: var(--text-main);
-            color: #ffffff;
-            padding: 6px 12px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            border-radius: 20px;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-        }
-
-        .card-info {
-            padding: 20px;
-        }
-
-        .card-info h2 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 6px;
-            letter-spacing: -0.3px;
-        }
-
-        .price {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--text-main);
-            margin-bottom: 16px;
-            display: flex;
-            align-items: center;
-        }
-
-        /* Botón de Compra por WhatsApp */
-        .btn-buy {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            background-color: var(--text-main);
-            color: #ffffff;
-            text-decoration: none;
-            padding: 14px;
-            border-radius: 12px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: var(--transition);
-        }
-
-        .btn-buy:active {
-            background-color: #333333;
-        }
-
-        .btn-buy i {
-            font-size: 1.2rem;
-            color: var(--whatsapp-green);
-        }
-
-        /* Sección Beneficios tipo Apple */
-        .benefits {
-            background-color: #ffffff;
-            margin: 40px 0;
-            padding: 40px 20px;
-            border-top: 1px solid rgba(0,0,0,0.05);
-            border-bottom: 1px solid rgba(0,0,0,0.05);
-        }
-
-        .benefits-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        .benefit-item {
-            display: flex;
-            gap: 16px;
-            align-items: flex-start;
-        }
-
-        .benefit-item i {
-            font-size: 1.8rem;
-            color: var(--text-main);
-            background: var(--bg-color);
-            padding: 10px;
-            border-radius: 12px;
-        }
-
-        .benefit-item h3 {
-            font-size: 1rem;
-            font-weight: 600;
-            margin-bottom: 4px;
-        }
-
-        .benefit-item p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            line-height: 1.4;
-        }
-
-        /* Sección Opiniones */
-        .reviews {
-            padding: 20px;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        .reviews h2 {
-            font-size: 1.6rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .review-card {
-            background: #ffffff;
-            padding: 20px;
-            border-radius: var(--border-radius);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
-            margin-bottom: 16px;
-        }
-
-        .review-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .reviewer-name {
-            font-weight: 600;
-            font-size: 0.95rem;
-        }
-
-        .stars {
-            color: #ffcc00;
-            display: flex;
-            gap: 2px;
-        }
-
-        .review-text {
-            font-size: 0.9rem;
-            color: #424245;
-            line-height: 1.5;
-        }
-
-        /* Instagram Atractivo */
-        .instagram-section {
-            text-align: center;
-            padding: 40px 20px;
-        }
-
-        .instagram-section p {
-            color: var(--text-muted);
-            margin-bottom: 12px;
-            font-size: 0.95rem;
-        }
-
-        .btn-instagram {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--text-main);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            border-bottom: 2px solid var(--text-main);
-            padding-bottom: 4px;
-        }
-
-        /* Botón Flotante WhatsApp */
-        .btn-float-wp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: var(--whatsapp-green);
-            color: white;
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
-            z-index: 999;
-            transition: var(--transition);
-            text-decoration: none;
-        }
-
-        .btn-float-wp:active {
-            transform: scale(0.9) rotate(5deg);
-            background-color: var(--whatsapp-dark);
-        }
-    </style>
 </head>
 <body>
 
+    <!-- Menú Superior Fijo -->
     <header>
         <div class="logo">
             <i class="ph-fill ph-wood"></i>
@@ -342,13 +27,16 @@
         </div>
     </header>
 
+    <!-- Hero Banner -->
     <section class="hero">
         <h1>Diseño Premium en Madera</h1>
         <p>Tablas artesanales seleccionadas con terminación profesional para asados, picadas y cocina.</p>
     </section>
 
+    <!-- Contenedor de Productos -->
     <div class="container">
 
+        <!-- Producto 1: Tabla Pizzera Grande -->
         <div class="card">
             <span class="badge">Más vendida</span>
             <div class="image-container">
@@ -357,12 +45,13 @@
             <div class="card-info">
                 <h2>Tabla Pizzera Grande</h2>
                 <div class="price">$18.000</div>
-                <a href="https://wa.me/5492615094424?text=Hola!%20Me%20interesa%20la%20Tabla%20Pizzera%20Grande%20de%20$18.000" class="btn-buy" target="_blank">
+                <a href="https://wa.me/5492610000000?text=Hola!%20Me%20interesa%20la%20Tabla%20Pizzera%20Grande%20de%20$18.000" class="btn-buy" target="_blank">
                     <i class="ph-fill ph-whatsapp-logo"></i> Comprar por WhatsApp
                 </a>
             </div>
         </div>
 
+        <!-- Producto 2: Tabla Grande -->
         <div class="card">
             <div class="image-container">
                 <img src="tabla-grande.jpg" alt="Tabla Grande 50x30">
@@ -376,6 +65,7 @@
             </div>
         </div>
 
+        <!-- Producto 3: Tabla Redonda Chica -->
         <div class="card">
             <div class="image-container">
                 <img src="tabla-redonda.jpg" alt="Tabla Redonda Chica">
@@ -389,6 +79,7 @@
             </div>
         </div>
 
+        <!-- Producto 4: Tabla Chica -->
         <div class="card">
             <div class="image-container">
                 <img src="tabla-chica.jpg" alt="Tabla Chica 30x20">
@@ -404,6 +95,7 @@
 
     </div>
 
+    <!-- Sección Beneficios -->
     <section class="benefits">
         <div class="benefits-grid">
             <div class="benefit-item">
@@ -430,9 +122,9 @@
         </div>
     </section>
 
+    <!-- Sección Opiniones -->
     <section class="reviews">
         <h2>Lo que dicen nuestros clientes</h2>
-        
         <div class="review-card">
             <div class="review-header">
                 <span class="reviewer-name">Marcelo R.</span>
@@ -440,20 +132,11 @@
                     <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
                 </div>
             </div>
-            <p class="review-text">"La tabla pizzera es gigante y súper pesada, excelente madera. El envío fue rapidísimo en el mismo día."</p>
-        </div>
-
-        <div class="review-card">
-            <div class="review-header">
-                <span class="reviewer-name">Sofía V.</span>
-                <div class="stars">
-                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
-                </div>
-            </div>
-            <p class="review-text">"Compré la de 50x30 para regalarle a mi marido y quedó encantado. Muy lindas las vetas que tiene la madera."</p>
+            <p class="review-text">"La tabla pizzera es gigante y súper pesada, excelente madera. El envío fue rapidísimo."</p>
         </div>
     </section>
 
+    <!-- Sección Instagram -->
     <section class="instagram-section">
         <p>Seguinos para ver los nuevos ingresos</p>
         <a href="https://instagram.com" class="btn-instagram" target="_blank">
@@ -461,9 +144,10 @@
         </a>
     </section>
 
-    <a href="https://wa.me/5492610000000?text=Hola!%20Quiero%20hacer una consulta%20sobre%20las%20tablas" class="btn-float-wp" target="_blank">
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/5492610000000?text=Hola!%20Quiero%20hacer una consulta" class="btn-float-wp" target="_blank">
         <i class="ph-fill ph-whatsapp-logo"></i>
     </a>
 
 </body>
-                                                                                                                                                    </html>
+</html>
