@@ -1,0 +1,201 @@
+/* Estilos generales para toda la página */
+body {
+    background-color: #1a1a1a; /* Un fondo gris oscuro, casi negro, muy elegante */
+    color: #ffffff;            /* Texto blanco para que resalte bien */
+    font-family: Arial, sans-serif; /* Una letra limpia y moderna */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el título principal */
+h1 {
+    color: #d4a373; /* Un color tipo madera/dorado de asado */
+    text-align: center;
+    margin-top: 50px;
+}
+<body>
+body {
+    font-family: 'Montserrat', sans-serif; /* Letra limpia para los textos */
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif; /* Letra imponente para los títulos */
+    text-transform: uppercase; /* Hace que los títulos queden en mayúsculas, bien estéticos */
+    letter-spacing: 1px; /* Separa un poquito las letras para que respiren */
+}
+    <!-- PORTADA PRINCIPAL -->
+    <header class="portada">
+        <div class="contenido-portada">
+            <h1>🔥ñTablas del Asador Mendoza</h1>
+            <p class="subtitulo">Tablas personalizadas hechas a mano.</p>
+            
+            <!-- Botón de WhatsApp (Falta poner tu número real después) -->
+            <a href="https://wa.me/tu_numero_aqui" class="btn-whatsapp" target="_blank">
+                📱 Pedidos por WhatsApp
+            </a>
+        </div>
+    </header>
+
+</body>
+/* Estilos para la Portada */
+.portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px; /* Espacio arriba y abajo para que no quede todo apretado */
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: #cccccc; /* Un gris claro elegante */
+    margin-bottom: 30px; /* Separa el texto del botón */
+}
+
+/* Estilo real del Botón de WhatsApp */
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25d366; /* El verde original de WhatsApp */
+    color: #ffffff !important;  /* Fuerza a que la letra sea blanca */
+    text-decoration: none !important; /* Saca el subrayado azul feo */
+    padding: 15px 30px; /* Le da tamaño y cuerpo al botón */
+    font-weight: bold;   /* Hace la letra negrita */
+    font-size: 1.1rem;
+    border-radius: 30px; /* Lo hace redondeado y moderno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Le da una sombra suave */
+}
+/* --- ESTILOS DEL CATÁLOGO --- */
+
+/* Título de la sección */
+.catalogo h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* El contenedor que agrupa todas las tarjetas */
+.contenedor-productos {
+    display: flex;
+    flex-direction: column; /* Una tarjeta abajo de la otra en el celular */
+    align-items: center;
+    gap: 25px; /* Deja una separación elegante entre tarjeta y tarjeta */
+    padding: 20px;
+}
+
+/* La tarjeta individual de cada producto */
+.tarjeta-producto {
+    background-color: #262626; /* Un gris un poco más claro que el fondo para que resalte */
+    border-radius: 15px;       /* Bordes redondeados y modernos */
+    overflow: hidden;          /* Corta la foto para que se adapte al redondeado de la tarjeta */
+    max-width: 350px;          /* Evita que la tarjeta se haga gigante */
+    width: 100%;               /* Se adapta al ancho de la pantalla del celular */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para darle profundidad */
+}
+
+/* Controlar las fotos de los productos */
+.img-producto {
+    width: 100%;               /* Obliga a la foto a ocupar todo el ancho de la tarjeta */
+    height: 220px;             /* Le da una altura fija fija a todas las fotos para que queden iguales */
+    object-fit: cover;         /* Recorta la imagen inteligentemente para que no se vea estirada ni aplastada */
+}
+
+/* El bloque de texto dentro de la tarjeta */
+.info-producto {
+    padding: 20px;
+}
+
+.info-producto h3 {
+    margin: 0 0 10px 0;
+    color: #d4a373;            /* Color madera para el nombre del producto */
+    font-size: 1.3rem;
+}
+
+.info-producto p {
+    color: #cccccc;
+    font-size: 0.95rem;
+    line-height: 1.4;          /* Le da más espacio entre renglones para que se lea mejor */
+    margin-bottom: 15px;
+}
+
+/* El precio destacable */
+.precio {
+    display: block;
+    color: #25d366;            /* Verde llamativo para el precio/consulta */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/* --- ESTILOS DE TESTIMONIOS --- */
+.testimonios {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonios h2 {
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.tarjeta-testimonio {
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 350px;
+    margin: 0 auto; /* Centra la cajita en el celular */
+    border-left: 4px solid #d4a373; /* Una sutil línea color madera al costado */
+}
+
+.comentario {
+    font-style: italic;
+    color: #dddddd;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.cliente {
+    color: #d4a373;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* --- ESTILOS DE REDES (INSTAGRAM) --- */
+.redes {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #111111; /* Un fondo sutilmente más oscuro para separar del resto */
+}
+
+.redes h2 {
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.redes p {
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+/* Botón con degradado característico de Instagram */
+.btn-instagram {
+    display: inline-block;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #ffffff !important;
+    text-decoration: none !important;
+    padding: 12px 25px;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+/* Estilo para el logo de la empresa */
+.logo-empresa {
+    width: 120px;         /* Un ancho ideal para la pantalla del celular */
+    height: 120px;        /* Alto igual para mantener la proporción */
+    object-fit: contain;  /* Hace que el logo se adapte al espacio sin deformarse */
+    border-radius: 50%;   /* Si tu logo es redondo, esto pule los bordes perfectamente */
+    margin-bottom: 15px;  /* Deja una separación prolija antes del título con el fueguito */
+}
