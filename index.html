@@ -1,280 +1,152 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas Mendoza - Catálogo Premium</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     
-    <style>
-        /* CSS Integrado para que NO falle */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', sans-serif;
-        }
-
-        body {
-            background-color: #f5f5f7;
-            color: #1d1d1f;
-            padding-top: 70px;
-            padding-bottom: 30px;
-        }
-
-        /* Menú superior fijo */
-        header {
-            position: fixed;
-            top: 0; left: 0; right: 0;
-            height: 60px;
-            background-color: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1.2rem;
-            border-bottom: 1px solid rgba(0,0,0,0.05);
-            z-index: 1000;
-        }
-
-        /* Contenedor central de la página */
-        .main-container {
-            padding: 15px;
-            max-width: 450px;
-            margin: 0 auto;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 20px 10px;
-        }
-
-        .hero h1 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-
-        .hero p {
-            color: #86868b;
-            font-size: 0.95rem;
-        }
-
-        /* Tarjetas de productos */
-        .product-card {
-            background: #ffffff;
-            border-radius: 18px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
-            margin-bottom: 25px;
-            position: relative;
-            border: 1px solid rgba(0,0,0,0.02);
-        }
-
-        /* Contenedor de la foto para que mantenga proporción perfecta */
-        .img-box {
-            width: 100%;
-            height: 260px;
-            background-color: #e5e5e5;
-        }
-
-        .img-box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Insignia Más Vendida */
-        .best-seller-badge {
-            position: absolute;
-            top: 12px;
-            left: 12px;
-            background: #1d1d1f;
-            color: #ffffff;
-            padding: 5px 10px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            border-radius: 20px;
-            text-transform: uppercase;
-            z-index: 5;
-        }
-
-        .product-details {
-            padding: 20px;
-        }
-
-        .product-details h2 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 6px;
-        }
-
-        .product-price {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #1d1d1f;
-        }
-
-        /* Botón de compra moderno */
-        .btn-whatsapp {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            background-color: #1d1d1f;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 12px;
-            border-radius: 10px;
-            font-weight: 600;
-            font-size: 0.95rem;
-        }
-
-        /* Sección de opiniones */
-        .reviews-section {
-            background: #ffffff;
-            border-radius: 18px;
-            padding: 20px;
-            margin-top: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
-        }
-
-        .reviews-section h3 {
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .review-item {
-            border-bottom: 1px solid #f5f5f7;
-            padding-bottom: 12px;
-            margin-bottom: 12px;
-        }
-
-        .review-item:last-child {
-            border: none;
-            padding-bottom: 0;
-            margin-bottom: 0;
-        }
-
-        .review-user {
-            font-weight: 600;
-            font-size: 0.9rem;
-            margin-bottom: 3px;
-        }
-
-        .review-text {
-            font-size: 0.85rem;
-            color: #424245;
-        }
-
-        /* Botón flotante de WhatsApp */
-        .float-wp-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25d366;
-            color: white;
-            width: 52px;
-            height: 52px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.8rem;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            z-index: 999;
-            text-decoration: none;
-        }
-    </style>
+    <!-- Enlace a tu archivo de estilos separado -->
+    <link rel="stylesheet" href="estilo.css">
+    
+    <!-- Fuentes e Iconos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
 
+    <!-- Menú Superior Fijo con tu Logo -->
     <header>
-        Tablas Mendoza
+        <div class="logo">
+            <img src="logo.png" alt="Logo Tablas Mendoza" style="height: 35px; width: auto; object-fit: contain;">
+            Tablas Mendoza
+        </div>
+        <div style="font-size: 1.2rem; color: var(--text-muted);">
+            <i class="ph ph-list"></i>
+        </div>
     </header>
 
-    <div class="main-container">
-        
-        <div class="hero">
-            <h1>Catálogo de Productos</h1>
-            <p>Tablas de madera artesanales de primera calidad</p>
-        </div>
+    <!-- Hero Banner -->
+    <section class="hero">
+        <h1>Diseño Premium en Madera</h1>
+        <p>Tablas artesanales seleccionadas con terminación profesional para asados, picadas y cocina.</p>
+    </section>
 
-        <div class="product-card">
-            <div class="best-seller-badge">Más vendida</div>
-            <div class="img-box">
-                <img src="tabla-pizzera.jpg" alt="Tabla Pizzera Grande">
+    <!-- Contenedor de Productos -->
+    <div class="container">
+
+        <!-- Producto 1: Tabla Redonda Grande (Pizzera) -->
+        <div class="card">
+            <span class="badge">Más vendida</span>
+            <div class="image-container">
+                <img src="redonda-grande.jpg" alt="Tabla Pizzera Grande">
             </div>
-            <div class="product-details">
+            <div class="card-info">
                 <h2>Tabla Pizzera Grande</h2>
-                <div class="product-price">$18.000</div>
-                <a href="https://wa.me/5492610000000?text=Hola!%20Me%20interesa%20la%20Tabla%20Pizzera%20Grande" class="btn-whatsapp" target="_blank">
-                    <i class="ph-fill ph-whatsapp-logo" style="color: #25d366;"></i> Comprar por WhatsApp
+                <div class="price">$18.000</div>
+                <a href="https://wa.me/5492610000000?text=Hola!%20Me%20interesa%20la%20Tabla%20Pizzera%20Grande%20de%20$18.000" class="btn-buy" target="_blank">
+                    <i class="ph-fill ph-whatsapp-logo"></i> Comprar por WhatsApp
                 </a>
             </div>
         </div>
 
-        <div class="product-card">
-            <div class="img-box">
-                <img src="tabla-grande.jpg" alt="Tabla Grande">
+        <!-- Producto 2: Tabla Cuadrada Grande -->
+        <div class="card">
+            <div class="image-container">
+                <img src="cuadrado-grande.jpg" alt="Tabla Cuadrada Grande 50x30">
             </div>
-            <div class="product-details">
+            <div class="card-info">
                 <h2>Tabla Grande (50×30)</h2>
-                <div class="product-price">$15.000</div>
-                <a href="https://wa.me/5492610000000?text=Hola!%20Me%20interesa%20la%20Tabla%20Grande" class="btn-whatsapp" target="_blank">
-                    <i class="ph-fill ph-whatsapp-logo" style="color: #25d366;"></i> Comprar por WhatsApp
+                <div class="price">$15.000</div>
+                <a href="https://wa.me/5492610000000?text=Hola!%20Me%20interesa%20la%20Tabla%20Grande%20(50x30)%20de%20$15.000" class="btn-buy" target="_blank">
+                    <i class="ph-fill ph-whatsapp-logo"></i> Comprar por WhatsApp
                 </a>
             </div>
         </div>
 
-        <div class="product-card">
-            <div class="img-box">
-                <img src="tabla-redonda.jpg" alt="Tabla Redonda Chica">
+        <!-- Producto 3: Tabla Redonda Chica -->
+        <div class="card">
+            <div class="image-container">
+                <img src="redonda-chica.jpg" alt="Tabla Redonda Chica">
             </div>
-            <div class="product-details">
+            <div class="card-info">
                 <h2>Tabla Redonda Chica</h2>
-                <div class="product-price">$10.000</div>
-                <a href="https://wa.me/5492610000000?text=Hola!%20Me%20interesa%20la%20Tabla%20Redonda%20Chica" class="btn-whatsapp" target="_blank">
-                    <i class="ph-fill ph-whatsapp-logo" style="color: #25d366;"></i> Comprar por WhatsApp
+                <div class="price">$10.000</div>
+                <a href="https://wa.me/5492610000000?text=Hola!%20Me%20interesa%20la%20Tabla%20Redonda%20Chica%20de%20$10.000" class="btn-buy" target="_blank">
+                    <i class="ph-fill ph-whatsapp-logo"></i> Comprar por WhatsApp
                 </a>
             </div>
         </div>
 
-        <div class="product-card">
-            <div class="img-box">
-                <img src="tabla-chica.jpg" alt="Tabla Chica">
+        <!-- Producto 4: Tabla Cuadrada Chica -->
+        <div class="card">
+            <div class="image-container">
+                <img src="cuadrada-chica.jpg" alt="Tabla Cuadrada Chica 30x20">
             </div>
-            <div class="product-details">
+            <div class="card-info">
                 <h2>Tabla Chica (30×20)</h2>
-                <div class="product-price">$8.000</div>
-                <a href="https://wa.me/5492610000000?text=Hola!%20Me%20interesa%20la%20Tabla%20Chica" class="btn-whatsapp" target="_blank">
-                    <i class="ph-fill ph-whatsapp-logo" style="color: #25d366;"></i> Comprar por WhatsApp
+                <div class="price">$8.000</div>
+                <a href="https://wa.me/5492610000000?text=Hola!%20Me%20interesa%20la%20Tabla%20Chica%20(30x20)%20de%20$8.000" class="btn-buy" target="_blank">
+                    <i class="ph-fill ph-whatsapp-logo"></i> Comprar por WhatsApp
                 </a>
-            </div>
-        </div>
-
-        <div class="reviews-section">
-            <h3>Lo que dicen nuestros clientes</h3>
-            <div class="review-item">
-                <div class="review-user">Marcelo R. ⭐⭐⭐⭐⭐</div>
-                <div class="review-text">"La tabla pizzera es excelente, muy buena madera. Súper recomendados."</div>
-            </div>
-            <div class="review-item">
-                <div class="review-user">Sofía V. ⭐⭐⭐⭐⭐</div>
-                <div class="review-text">"Compré la tabla grande para regalar y quedó fascinado. Hermosas terminaciones."</div>
             </div>
         </div>
 
     </div>
 
-    <a href="https://wa.me/5492610000000" class="float-wp-btn" target="_blank">
+    <!-- Sección Beneficios -->
+    <section class="benefits">
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <i class="ph ph-truck"></i>
+                <div>
+                    <h3>Envíos a todo Mendoza</h3>
+                    <p>Coordinamos la entrega de tu tabla de forma rápida y segura directamente a tu casa.</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <i class="ph ph-sparkles"></i>
+                <div>
+                    <h3>Calidad de Madera Seleccionada</h3>
+                    <p>Curadas con productos naturales, listas para usar apenas las recibís en tu cocina.</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <i class="ph ph-chat-centered-dots"></i>
+                <div>
+                    <h3>Atención Personalizada</h3>
+                    <p>Respondemos tus dudas al instante por WhatsApp para personalizar tus pedidos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Opiniones -->
+    <section class="reviews">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="review-card">
+            <div class="review-header">
+                <span class="reviewer-name">Marcelo R.</span>
+                <div class="stars">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+            </div>
+            <p class="review-text">"La tabla pizzera es gigante y súper pesada, excelente madera. El envío fue rapidísimo."</p>
+        </div>
+    </section>
+
+    <!-- Sección Instagram -->
+    <section class="instagram-section">
+        <p>Seguinos para ver los nuevos ingresos</p>
+        <a href="https://instagram.com" class="btn-instagram" target="_blank">
+            <i class="ph ph-instagram-logo"></i> @TablasMendoza
+        </a>
+    </section>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/5492610000000?text=Hola!%20Quiero%20hacer una consulta" class="btn-float-wp" target="_blank">
         <i class="ph-fill ph-whatsapp-logo"></i>
     </a>
 
 </body>
-</html>
