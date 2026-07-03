@@ -1,153 +1,201 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas Mendoza - Catálogo Premium</title>
-    
-    <!-- Enlace corregido para tu archivo estilo.css -->
-    <link rel="stylesheet" href="estilo.css">
-    
-    <!-- Fuentes e Iconos -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-</head>
-<body>
+/* Estilos generales para toda la página */
+body {
+    background-color: #1a1a1a; /* Un fondo gris oscuro, casi negro, muy elegante */
+    color: #ffffff;            /* Texto blanco para que resalte bien */
+    font-family: Arial, sans-serif; /* Una letra limpia y moderna */
+    margin: 0;
+    padding: 0;
+}
 
-    <!-- Menú Superior Fijo -->
-    <header>
-        <div class="logo">
-            <i class="ph-fill ph-wood"></i>
-            Tablas Mendoza
-        </div>
-        <div style="font-size: 1.2rem; color: var(--text-muted);">
-            <i class="ph ph-list"></i>
+/* Estilo para el título principal */
+h1 {
+    color: #d4a373; /* Un color tipo madera/dorado de asado */
+    text-align: center;
+    margin-top: 50px;
+}
+<body>
+body {
+    font-family: 'Montserrat', sans-serif; /* Letra limpia para los textos */
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif; /* Letra imponente para los títulos */
+    text-transform: uppercase; /* Hace que los títulos queden en mayúsculas, bien estéticos */
+    letter-spacing: 1px; /* Separa un poquito las letras para que respiren */
+}
+    <!-- PORTADA PRINCIPAL -->
+    <header class="portada">
+        <div class="contenido-portada">
+            <h1>🔥ñTablas del Asador Mendoza</h1>
+            <p class="subtitulo">Tablas personalizadas hechas a mano.</p>
+            
+            <!-- Botón de WhatsApp (Falta poner tu número real después) -->
+            <a href="https://wa.me/tu_numero_aqui" class="btn-whatsapp" target="_blank">
+                📱 Pedidos por WhatsApp
+            </a>
         </div>
     </header>
 
-    <!-- Hero Banner -->
-    <section class="hero">
-        <h1>Diseño Premium en Madera</h1>
-        <p>Tablas artesanales seleccionadas con terminación profesional para asados, picadas y cocina.</p>
-    </section>
-
-    <!-- Contenedor de Productos -->
-    <div class="container">
-
-        <!-- Producto 1: Tabla Pizzera Grande -->
-        <div class="card">
-            <span class="badge">Más vendida</span>
-            <div class="image-container">
-                <img src="tabla-pizzera.jpg" alt="Tabla Pizzera Grande">
-            </div>
-            <div class="card-info">
-                <h2>Tabla Pizzera Grande</h2>
-                <div class="price">$18.000</div>
-                <a href="https://wa.me/5492610000000?text=Hola!%20Me%20interesa%20la%20Tabla%20Pizzera%20Grande%20de%20$18.000" class="btn-buy" target="_blank">
-                    <i class="ph-fill ph-whatsapp-logo"></i> Comprar por WhatsApp
-                </a>
-            </div>
-        </div>
-
-        <!-- Producto 2: Tabla Grande -->
-        <div class="card">
-            <div class="image-container">
-                <img src="tabla-grande.jpg" alt="Tabla Grande 50x30">
-            </div>
-            <div class="card-info">
-                <h2>Tabla Grande (50×30)</h2>
-                <div class="price">$15.000</div>
-                <a href="https://wa.me/5492610000000?text=Hola!%20Me%20interesa%20la%20Tabla%20Grande%20(50x30)%20de%20$15.000" class="btn-buy" target="_blank">
-                    <i class="ph-fill ph-whatsapp-logo"></i> Comprar por WhatsApp
-                </a>
-            </div>
-        </div>
-
-        <!-- Producto 3: Tabla Redonda Chica -->
-        <div class="card">
-            <div class="image-container">
-                <img src="tabla-redonda.jpg" alt="Tabla Redonda Chica">
-            </div>
-            <div class="card-info">
-                <h2>Tabla Redonda Chica</h2>
-                <div class="price">$10.000</div>
-                <a href="https://wa.me/5492610000000?text=Hola!%20Me%20interesa%20la%20Tabla%20Redonda%20Chica%20de%20$10.000" class="btn-buy" target="_blank">
-                    <i class="ph-fill ph-whatsapp-logo"></i> Comprar por WhatsApp
-                </a>
-            </div>
-        </div>
-
-        <!-- Producto 4: Tabla Chica -->
-        <div class="card">
-            <div class="image-container">
-                <img src="tabla-chica.jpg" alt="Tabla Chica 30x20">
-            </div>
-            <div class="card-info">
-                <h2>Tabla Chica (30×20)</h2>
-                <div class="price">$8.000</div>
-                <a href="https://wa.me/5492610000000?text=Hola!%20Me%20interesa%20la%20Tabla%20Chica%20(30x20)%20de%20$8.000" class="btn-buy" target="_blank">
-                    <i class="ph-fill ph-whatsapp-logo"></i> Comprar por WhatsApp
-                </a>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Sección Beneficios -->
-    <section class="benefits">
-        <div class="benefits-grid">
-            <div class="benefit-item">
-                <i class="ph ph-truck"></i>
-                <div>
-                    <h3>Envíos a todo Mendoza</h3>
-                    <p>Coordinamos la entrega de tu tabla de forma rápida y segura directamente a tu casa.</p>
-                </div>
-            </div>
-            <div class="benefit-item">
-                <i class="ph ph-sparkles"></i>
-                <div>
-                    <h3>Calidad de Madera Seleccionada</h3>
-                    <p>Curadas con productos naturales, listas para usar apenas las recibís en tu cocina.</p>
-                </div>
-            </div>
-            <div class="benefit-item">
-                <i class="ph ph-chat-centered-dots"></i>
-                <div>
-                    <h3>Atención Personalizada</h3>
-                    <p>Respondemos tus dudas al instante por WhatsApp para personalizar tus pedidos.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Opiniones -->
-    <section class="reviews">
-        <h2>Lo que dicen nuestros clientes</h2>
-        <div class="review-card">
-            <div class="review-header">
-                <span class="reviewer-name">Marcelo R.</span>
-                <div class="stars">
-                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
-                </div>
-            </div>
-            <p class="review-text">"La tabla pizzera es gigante y súper pesada, excelente madera. El envío fue rapidísimo."</p>
-        </div>
-    </section>
-
-    <!-- Sección Instagram -->
-    <section class="instagram-section">
-        <p>Seguinos para ver los nuevos ingresos</p>
-        <a href="https://instagram.com" class="btn-instagram" target="_blank">
-            <i class="ph ph-instagram-logo"></i> @TablasMendoza
-        </a>
-    </section>
-
-    <!-- Botón Flotante de WhatsApp -->
-    <a href="https://wa.me/5492610000000?text=Hola!%20Quiero%20hacer una consulta" class="btn-float-wp" target="_blank">
-        <i class="ph-fill ph-whatsapp-logo"></i>
-    </a>
-
 </body>
-</html>
+/* Estilos para la Portada */
+.portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px; /* Espacio arriba y abajo para que no quede todo apretado */
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: #cccccc; /* Un gris claro elegante */
+    margin-bottom: 30px; /* Separa el texto del botón */
+}
+
+/* Estilo real del Botón de WhatsApp */
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25d366; /* El verde original de WhatsApp */
+    color: #ffffff !important;  /* Fuerza a que la letra sea blanca */
+    text-decoration: none !important; /* Saca el subrayado azul feo */
+    padding: 15px 30px; /* Le da tamaño y cuerpo al botón */
+    font-weight: bold;   /* Hace la letra negrita */
+    font-size: 1.1rem;
+    border-radius: 30px; /* Lo hace redondeado y moderno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Le da una sombra suave */
+}
+/* --- ESTILOS DEL CATÁLOGO --- */
+
+/* Título de la sección */
+.catalogo h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* El contenedor que agrupa todas las tarjetas */
+.contenedor-productos {
+    display: flex;
+    flex-direction: column; /* Una tarjeta abajo de la otra en el celular */
+    align-items: center;
+    gap: 25px; /* Deja una separación elegante entre tarjeta y tarjeta */
+    padding: 20px;
+}
+
+/* La tarjeta individual de cada producto */
+.tarjeta-producto {
+    background-color: #262626; /* Un gris un poco más claro que el fondo para que resalte */
+    border-radius: 15px;       /* Bordes redondeados y modernos */
+    overflow: hidden;          /* Corta la foto para que se adapte al redondeado de la tarjeta */
+    max-width: 350px;          /* Evita que la tarjeta se haga gigante */
+    width: 100%;               /* Se adapta al ancho de la pantalla del celular */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para darle profundidad */
+}
+
+/* Controlar las fotos de los productos */
+.img-producto {
+    width: 100%;               /* Obliga a la foto a ocupar todo el ancho de la tarjeta */
+    height: 220px;             /* Le da una altura fija fija a todas las fotos para que queden iguales */
+    object-fit: cover;         /* Recorta la imagen inteligentemente para que no se vea estirada ni aplastada */
+}
+
+/* El bloque de texto dentro de la tarjeta */
+.info-producto {
+    padding: 20px;
+}
+
+.info-producto h3 {
+    margin: 0 0 10px 0;
+    color: #d4a373;            /* Color madera para el nombre del producto */
+    font-size: 1.3rem;
+}
+
+.info-producto p {
+    color: #cccccc;
+    font-size: 0.95rem;
+    line-height: 1.4;          /* Le da más espacio entre renglones para que se lea mejor */
+    margin-bottom: 15px;
+}
+
+/* El precio destacable */
+.precio {
+    display: block;
+    color: #25d366;            /* Verde llamativo para el precio/consulta */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/* --- ESTILOS DE TESTIMONIOS --- */
+.testimonios {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonios h2 {
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.tarjeta-testimonio {
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 350px;
+    margin: 0 auto; /* Centra la cajita en el celular */
+    border-left: 4px solid #d4a373; /* Una sutil línea color madera al costado */
+}
+
+.comentario {
+    font-style: italic;
+    color: #dddddd;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.cliente {
+    color: #d4a373;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* --- ESTILOS DE REDES (INSTAGRAM) --- */
+.redes {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #111111; /* Un fondo sutilmente más oscuro para separar del resto */
+}
+
+.redes h2 {
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.redes p {
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+/* Botón con degradado característico de Instagram */
+.btn-instagram {
+    display: inline-block;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #ffffff !important;
+    text-decoration: none !important;
+    padding: 12px 25px;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+/* Estilo para el logo de la empresa */
+.logo-empresa {
+    width: 120px;         /* Un ancho ideal para la pantalla del celular */
+    height: 120px;        /* Alto igual para mantener la proporción */
+    object-fit: contain;  /* Hace que el logo se adapte al espacio sin deformarse */
+    border-radius: 50%;   /* Si tu logo es redondo, esto pule los bordes perfectamente */
+    margin-bottom: 15px;  /* Deja una separación prolija antes del título con el fueguito */
+}
