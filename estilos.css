@@ -1,561 +1,153 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-font-family:'Montserrat',sans-serif;
-background:#121212;
-color:white;
-}
-
-.navbar{
-position:fixed;
-top:0;
-width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 20px;
-background:#1b1b1b;
-box-shadow:0 2px 10px rgba(0,0,0,.5);
-z-index:999;
-}
-
-.logo-nav{
-font-family:'Oswald',sans-serif;
-font-size:1.4rem;
-color:#d4a373;
-}
-
-.navbar ul{
-display:flex;
-gap:15px;
-list-style:none;
-}
-
-.navbar a{
-color:white;
-text-decoration:none;
-font-weight:bold;
-font-size:.9rem;
-transition:.3s;
-}
-
-.navbar a:hover{
-color:#d4a373;
-}
-
-.portada{
-padding:120px 20px 70px;
-text-align:center;
-background:linear-gradient(to bottom,#1a1a1a,#111);
-}
-
-.logo-empresa{
-width:130px;
-height:130px;
-border-radius:50%;
-margin-bottom:20px;
-box-shadow:0 0 20px rgba(212,163,115,.5);
-}
-
-h1{
-font-family:'Oswald',sans-serif;
-font-size:2.4rem;
-color:#d4a373;
-margin-bottom:15px;
-}
-
-.subtitulo{
-max-width:600px;
-margin:auto;
-color:#ddd;
-line-height:1.7;
-font-size:1rem;
-}
-
-.btn-whatsapp{
-display:inline-block;
-margin-top:30px;
-background:#25D366;
-padding:15px 30px;
-border-radius:40px;
-text-decoration:none;
-font-weight:bold;
-color:white;
-transition:.3s;
-}
-
-.btn-whatsapp:hover{
-transform:scale(1.05);
-}
-
-section{
-padding:70px 20px;
-}
-
-section h2{
-font-family:'Oswald',sans-serif;
-text-align:center;
-margin-bottom:40px;
-font-size:2rem;
-color:#d4a373;
-}
-
-.beneficios-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
-gap:20px;
-}
-
-.beneficio{
-background:#1f1f1f;
-padding:25px;
-border-radius:15px;
-text-align:center;
-transition:.3s;
-}
-
-.beneficio:hover{
-transform:translateY(-8px);
-}
-
-.beneficio h3{
-margin:15px 0;
-}
-
-.contenedor-productos{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-
-.tarjeta-producto{
-background:#1f1f1f;
-border-radius:18px;
-overflow:hidden;
-transition:.3s;
-box-shadow:0 10px 20px rgba(0,0,0,.4);
-position:relative;
-}
-
-.tarjeta-producto:hover{
-transform:translateY(-10px);
-}
-
-.etiqueta{
-position:absolute;
-top:15px;
-left:15px;
-background:#d4a373;
-color:black;
-padding:6px 12px;
-border-radius:30px;
-font-size:.8rem;
-font-weight:bold;
-}
-
-.img-producto{
-width:100%;
-height:230px;
-object-fit:cover;
-}
-
-.info-producto{
-padding:20px;
-}
-
-.info-producto h3{
-font-family:'Oswald',sans-serif;
-margin-bottom:15px;
-color:#d4a373;
-}
-
-.info-producto p{
-line-height:1.7;
-color:#ddd;
-}
-
-.precio{
-font-size:2rem;
-font-weight:bold;
-color:#25D366;
-margin:20px 0;
-}
-
-.btn-comprar{
-display:block;
-text-align:center;
-background:#25D366;
-padding:14px;
-border-radius:12px;
-text-decoration:none;
-font-weight:bold;
-color:white;
-transition:.3s;
-}
-
-.btn-comprar:hover{
-background:#1fa851;
-}
-
-.tarjeta-testimonio{
-max-width:700px;
-margin:auto;
-background:#1f1f1f;
-padding:30px;
-border-radius:18px;
-text-align:center;
-line-height:1.8;
-border-left:5px solid #d4a373;
-}
-
-.instagram{
-text-align:center;
-}
-
-.btn-instagram{
-display:inline-block;
-margin-top:20px;
-padding:14px 28px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-color:white;
-background:linear-gradient(45deg,#f09433,#dc2743,#833ab4);
-}
-
-.whatsapp-fijo{
-position:fixed;
-right:20px;
-bottom:20px;
-width:60px;
-height:60px;
-border-radius:50%;
-background:#25D366;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:28px;
-text-decoration:none;
-color:white;
-box-shadow:0 5px 20px rgba(0,0,0,.4);
-z-index:999;
-transition:.3s;
-}
-
-.whatsapp-fijo:hover{
-transform:scale(1.1);
-}
-
-footer{
-background:#0d0d0d;
-padding:30px;
-text-align:center;
-color:#999;
-margin-top:50px;
-}
-
-@media(max-width:700px){
-
-.navbar{
-flex-direction:column;
-gap:10px;
-}
-
-.navbar ul{
-flex-wrap:wrap;
-justify-content:center;
-}
-
-h1{
-font-size:2rem;
-}
-
-}*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-font-family:'Montserrat',sans-serif;
-background:#121212;
-color:white;
-}
-
-.navbar{
-position:fixed;
-top:0;
-width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 20px;
-background:#1b1b1b;
-box-shadow:0 2px 10px rgba(0,0,0,.5);
-z-index:999;
-}
-
-.logo-nav{
-font-family:'Oswald',sans-serif;
-font-size:1.4rem;
-color:#d4a373;
-}
-
-.navbar ul{
-display:flex;
-gap:15px;
-list-style:none;
-}
-
-.navbar a{
-color:white;
-text-decoration:none;
-font-weight:bold;
-font-size:.9rem;
-transition:.3s;
-}
-
-.navbar a:hover{
-color:#d4a373;
-}
-
-.portada{
-padding:120px 20px 70px;
-text-align:center;
-background:linear-gradient(to bottom,#1a1a1a,#111);
-}
-
-.logo-empresa{
-width:130px;
-height:130px;
-border-radius:50%;
-margin-bottom:20px;
-box-shadow:0 0 20px rgba(212,163,115,.5);
-}
-
-h1{
-font-family:'Oswald',sans-serif;
-font-size:2.4rem;
-color:#d4a373;
-margin-bottom:15px;
-}
-
-.subtitulo{
-max-width:600px;
-margin:auto;
-color:#ddd;
-line-height:1.7;
-font-size:1rem;
-}
-
-.btn-whatsapp{
-display:inline-block;
-margin-top:30px;
-background:#25D366;
-padding:15px 30px;
-border-radius:40px;
-text-decoration:none;
-font-weight:bold;
-color:white;
-transition:.3s;
-}
-
-.btn-whatsapp:hover{
-transform:scale(1.05);
-}
-
-section{
-padding:70px 20px;
-}
-
-section h2{
-font-family:'Oswald',sans-serif;
-text-align:center;
-margin-bottom:40px;
-font-size:2rem;
-color:#d4a373;
-}
-
-.beneficios-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
-gap:20px;
-}
-
-.beneficio{
-background:#1f1f1f;
-padding:25px;
-border-radius:15px;
-text-align:center;
-transition:.3s;
-}
-
-.beneficio:hover{
-transform:translateY(-8px);
-}
-
-.beneficio h3{
-margin:15px 0;
-}
-
-.contenedor-productos{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-
-.tarjeta-producto{
-background:#1f1f1f;
-border-radius:18px;
-overflow:hidden;
-transition:.3s;
-box-shadow:0 10px 20px rgba(0,0,0,.4);
-position:relative;
-}
-
-.tarjeta-producto:hover{
-transform:translateY(-10px);
-}
-
-.etiqueta{
-position:absolute;
-top:15px;
-left:15px;
-background:#d4a373;
-color:black;
-padding:6px 12px;
-border-radius:30px;
-font-size:.8rem;
-font-weight:bold;
-}
-
-.img-producto{
-width:100%;
-height:230px;
-object-fit:cover;
-}
-
-.info-producto{
-padding:20px;
-}
-
-.info-producto h3{
-font-family:'Oswald',sans-serif;
-margin-bottom:15px;
-color:#d4a373;
-}
-
-.info-producto p{
-line-height:1.7;
-color:#ddd;
-}
-
-.precio{
-font-size:2rem;
-font-weight:bold;
-color:#25D366;
-margin:20px 0;
-}
-
-.btn-comprar{
-display:block;
-text-align:center;
-background:#25D366;
-padding:14px;
-border-radius:12px;
-text-decoration:none;
-font-weight:bold;
-color:white;
-transition:.3s;
-}
-
-.btn-comprar:hover{
-background:#1fa851;
-}
-
-.tarjeta-testimonio{
-max-width:700px;
-margin:auto;
-background:#1f1f1f;
-padding:30px;
-border-radius:18px;
-text-align:center;
-line-height:1.8;
-border-left:5px solid #d4a373;
-}
-
-.instagram{
-text-align:center;
-}
-
-.btn-instagram{
-display:inline-block;
-margin-top:20px;
-padding:14px 28px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-color:white;
-background:linear-gradient(45deg,#f09433,#dc2743,#833ab4);
-}
-
-.whatsapp-fijo{
-position:fixed;
-right:20px;
-bottom:20px;
-width:60px;
-height:60px;
-border-radius:50%;
-background:#25D366;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:28px;
-text-decoration:none;
-color:white;
-box-shadow:0 5px 20px rgba(0,0,0,.4);
-z-index:999;
-transition:.3s;
-}
-
-.whatsapp-fijo:hover{
-transform:scale(1.1);
-}
-
-footer{
-background:#0d0d0d;
-padding:30px;
-text-align:center;
-color:#999;
-margin-top:50px;
-}
-
-@media(max-width:700px){
-
-.navbar{
-flex-direction:column;
-gap:10px;
-}
-
-.navbar ul{
-flex-wrap:wrap;
-justify-content:center;
-}
-
-h1{
-font-size:2rem;
-}
-
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas Mendoza - Catálogo Premium</title>
+    
+    <!-- Enlace corregido para tu archivo estilo.css -->
+    <link rel="stylesheet" href="estilo.css">
+    
+    <!-- Fuentes e Iconos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <!-- Menú Superior Fijo -->
+    <header>
+        <div class="logo">
+            <i class="ph-fill ph-wood"></i>
+            Tablas Mendoza
+        </div>
+        <div style="font-size: 1.2rem; color: var(--text-muted);">
+            <i class="ph ph-list"></i>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <h1>Diseño Premium en Madera</h1>
+        <p>Tablas artesanales seleccionadas con terminación profesional para asados, picadas y cocina.</p>
+    </section>
+
+    <!-- Contenedor de Productos -->
+    <div class="container">
+
+        <!-- Producto 1: Tabla Pizzera Grande -->
+        <div class="card">
+            <span class="badge">Más vendida</span>
+            <div class="image-container">
+                <img src="tabla-pizzera.jpg" alt="Tabla Pizzera Grande">
+            </div>
+            <div class="card-info">
+                <h2>Tabla Pizzera Grande</h2>
+                <div class="price">$18.000</div>
+                <a href="https://wa.me/5492610000000?text=Hola!%20Me%20interesa%20la%20Tabla%20Pizzera%20Grande%20de%20$18.000" class="btn-buy" target="_blank">
+                    <i class="ph-fill ph-whatsapp-logo"></i> Comprar por WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <!-- Producto 2: Tabla Grande -->
+        <div class="card">
+            <div class="image-container">
+                <img src="tabla-grande.jpg" alt="Tabla Grande 50x30">
+            </div>
+            <div class="card-info">
+                <h2>Tabla Grande (50×30)</h2>
+                <div class="price">$15.000</div>
+                <a href="https://wa.me/5492610000000?text=Hola!%20Me%20interesa%20la%20Tabla%20Grande%20(50x30)%20de%20$15.000" class="btn-buy" target="_blank">
+                    <i class="ph-fill ph-whatsapp-logo"></i> Comprar por WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <!-- Producto 3: Tabla Redonda Chica -->
+        <div class="card">
+            <div class="image-container">
+                <img src="tabla-redonda.jpg" alt="Tabla Redonda Chica">
+            </div>
+            <div class="card-info">
+                <h2>Tabla Redonda Chica</h2>
+                <div class="price">$10.000</div>
+                <a href="https://wa.me/5492610000000?text=Hola!%20Me%20interesa%20la%20Tabla%20Redonda%20Chica%20de%20$10.000" class="btn-buy" target="_blank">
+                    <i class="ph-fill ph-whatsapp-logo"></i> Comprar por WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <!-- Producto 4: Tabla Chica -->
+        <div class="card">
+            <div class="image-container">
+                <img src="tabla-chica.jpg" alt="Tabla Chica 30x20">
+            </div>
+            <div class="card-info">
+                <h2>Tabla Chica (30×20)</h2>
+                <div class="price">$8.000</div>
+                <a href="https://wa.me/5492610000000?text=Hola!%20Me%20interesa%20la%20Tabla%20Chica%20(30x20)%20de%20$8.000" class="btn-buy" target="_blank">
+                    <i class="ph-fill ph-whatsapp-logo"></i> Comprar por WhatsApp
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Sección Beneficios -->
+    <section class="benefits">
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <i class="ph ph-truck"></i>
+                <div>
+                    <h3>Envíos a todo Mendoza</h3>
+                    <p>Coordinamos la entrega de tu tabla de forma rápida y segura directamente a tu casa.</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <i class="ph ph-sparkles"></i>
+                <div>
+                    <h3>Calidad de Madera Seleccionada</h3>
+                    <p>Curadas con productos naturales, listas para usar apenas las recibís en tu cocina.</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <i class="ph ph-chat-centered-dots"></i>
+                <div>
+                    <h3>Atención Personalizada</h3>
+                    <p>Respondemos tus dudas al instante por WhatsApp para personalizar tus pedidos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Opiniones -->
+    <section class="reviews">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="review-card">
+            <div class="review-header">
+                <span class="reviewer-name">Marcelo R.</span>
+                <div class="stars">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+            </div>
+            <p class="review-text">"La tabla pizzera es gigante y súper pesada, excelente madera. El envío fue rapidísimo."</p>
+        </div>
+    </section>
+
+    <!-- Sección Instagram -->
+    <section class="instagram-section">
+        <p>Seguinos para ver los nuevos ingresos</p>
+        <a href="https://instagram.com" class="btn-instagram" target="_blank">
+            <i class="ph ph-instagram-logo"></i> @TablasMendoza
+        </a>
+    </section>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/5492610000000?text=Hola!%20Quiero%20hacer una consulta" class="btn-float-wp" target="_blank">
+        <i class="ph-fill ph-whatsapp-logo"></i>
+    </a>
+
+</body>
+</html>
